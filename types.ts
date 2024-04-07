@@ -31,7 +31,7 @@ export interface Price {
   interval_count?: number;
   trial_period_days?: number | null;
   metadata?: Stripe.Metadata;
-  products?: product;
+  products?: Product;
 }
 
 export interface Subscription {
@@ -50,5 +50,5 @@ export interface Subscription {
   canceled_at?: string;
   trial_start?: string;
   trial_end?: string;
-  prices?: price;
+  prices?: Price;
 }
